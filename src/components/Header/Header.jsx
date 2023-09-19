@@ -1,7 +1,7 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,10 +9,12 @@ const Header = () => {
       <nav>
         <span>My Website</span>
         <Link to={'/'}>Home</Link>
-        <Link to={'/users'}>Users</Link>
+        <NavLink to={'/users'}>Users</NavLink>
+        {/* <Link to={'/users'}>Users</Link> */}
+        <NavLink to={'/posts'}>Posts</NavLink>
+        {/* <Link to={'/posts'}>Posts</Link> */}
         <Link to={'/about'}>About</Link>
         <Link to={'/contact'}>Contact</Link>
-        <Link to={'/posts'}>Posts</Link>
       </nav>
     </div>
   );
